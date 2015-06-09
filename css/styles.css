@@ -1,0 +1,186 @@
+body{
+	position: relative;
+	background-color: #8F0335;
+	margin: 0px;
+}
+h1, h2, h4, a{
+	font-family: "Agency FB", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+h4, span{
+	color: #FFFFFF;
+	font-size: 18px;
+}
+p, strong, a{
+	font-size: 9px;
+}
+hr{
+	border: 0px;
+	width: 88%;
+	text-align: center;
+	height: 1px;
+	background: #CCCCCC;
+}
+span:hover{
+	text-decoration: underline;
+}
+h1{
+	font-family: "Droid Sans", Lato, Arial, Helvetica;
+	font-size: 40px;
+	text-align: center;
+}
+h2{
+	font-size: 20px;
+}
+legend{
+	text-align: left;
+}
+textarea{
+	display: block;
+	width: 50%;
+	margin-left: 50px;
+	margin-right: 50px;
+	resize: none;
+}
+.social-media{
+	border: none;
+	position: absolute;
+	top: 0px;
+	right: 6%;
+	display: inline;
+}
+.navigation-elements{
+	display: inline-block;
+	width: 100%; 
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.contact-bar, .nav-bar, .register-table{
+	table-layout: fixed;
+}
+.contact-bar{
+	margin-top: 30px;
+}
+.register-table{
+	text-align: left;
+	padding-left: 50px;
+}
+.nav-bar{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.container{
+	margin-left: 100px;
+	margin-right: 100px;
+	text-align: center;
+}
+.content2, fieldset{
+	border: 1px solid black;
+	background-color: #F5F5F5;
+	margin-top: 10px;
+	margin: 15px 15px 15px 15px;
+	border-radius: 20px;
+}
+.image-container{
+	text-align: center;
+}
+.image-viewer:before{
+	height: 100%;
+	width: 0px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.image-viewer{
+	border: 1px solid black;
+	width: 66%;
+	height: 500px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	vertical-align: middle;
+	display: inline-block;
+}
+.thumbnail-image, .text{
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.text{
+	width: 60%;
+	display: inline-block;
+	text-align: left;
+}
+.thumbnail-image{
+	border: 1px solid black;
+	max-height: 200px;;
+	max-width: 40%;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+.middle{
+	vertical-align: middle;
+}
+.left{
+	margin-left: 50px;
+	margin-right: 10px;
+}
+.right{
+	margin-right: 50px;
+	margin-left: 10px;
+}
+.footer{
+	margin: 10px 30px 10px 30px;
+	width: 95%;
+}
+.warning
+{
+	display: inline;
+	color: #FF6666;
+	font-weight: bold;
+	border-radius: 5px;
+	padding-left: 10px;
+}
+.info{
+	color: #32CD32;
+	font-weight: bold;
+}
+.fancy-font{
+	font-family: "Segoe Script", 'AR Decode', Vijaya, Arial;
+	font-size: 20px;
+	text-align: center;
+}
+.arrow-left, .arrow-right{
+	width: 0; 
+	height: 0; 
+	padding: 0;
+	border:0;
+	margin: 0;
+	color: #F5F5F5;
+}
+.arrow-left {
+	border-top: 50px solid #F5F5F5;
+	border-bottom: 50px solid #F5F5F5; 
+	border-right:50px solid black; 
+}
+.arrow-right {
+	border-top: 50px solid #F5F5F5;
+	border-bottom: 50px solid #F5F5F5;
+	border-left: 50px solid black;
+}
+.float-left{
+	float: left;
+	vertical-align: bottom;
+}
+#logo{
+	width: 100%;
+}
+#reasonlabel, #experiencelabel, #file-input, #submit, #preview{
+	float: left;
+	margin-left: 50px;
+}
+#preview{
+	display: none;
+}
+#counter{
+	display: block;
+	font-size: 20px;
+}
