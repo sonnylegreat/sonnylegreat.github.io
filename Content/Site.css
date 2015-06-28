@@ -1,0 +1,51 @@
+﻿body {
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.main{
+    border-bottom: 1px solid black;
+}
+
+.social-media{
+    padding-top: 0 !important;
+}
+.item img{
+    max-height: 640px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+.placeholder{
+    margin-top: 20px;
+    clear: both;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+#header{
+    min-height: 25px;
+    height: 25px !important;
+    margin-bottom: 0;
+}
+#title{
+    font-family: "Segoe Script", "AR DECODE", Vijaya, Arial;
+}
+a, a:hover{
+    color: black;
+}
