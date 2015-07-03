@@ -17,6 +17,16 @@ h2{
     padding-top: 75px;
     width: 100%;
 }
+.moveFront{
+    z-index: 1000000;
+    position: absolute;
+    left: 0;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.replace{
+    z-index: 1;
+}
 
 #title{
     font-family: "Segoe Script", "AR DECODE", Vijaya, Arial;

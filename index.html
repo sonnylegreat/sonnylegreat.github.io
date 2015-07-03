@@ -8,6 +8,7 @@
     <link href="Content/bootstrap.css" rel="stylesheet"/>
     <link href="Content/OwlCarousel/owl.carousel.css" rel="stylesheet"/>
     <link href="Content/OwlCarousel/owl.theme.css" rel="stylesheet"/>
+    <link href="Content/Hover/hover.css" rel="stylesheet"/>
     <link href="Content/Site.css" rel="stylesheet"/>
     
     <script src="Scripts/modernizr-2.6.2.js"></script>
@@ -47,50 +48,86 @@
         <section id="series" name="series">
             <div class="row">
                 <div class="col-md-3">
-                  <div class="shirtModal modal-dialog">
+                  <div class="shirtModal modal-dialog hvr-grow">
                     <div class="modal-content">
                         <h2 class="modal-title">Shirt 1</h2>
                       <!-- dialog body -->
                       <div class="modal-body">
-                        <img src="Content/logo.png">
+                        <img src="Content/logo.png"/>
                       </div>
                       <!-- dialog buttons -->
                       <div class="modal-footer"></div>
                     </div>
                   </div>
-                  
-                  <div class="shirtModal modal-dialog">
-                    <div class="modal-content">
-                        <h2 class="modal-title">Shirt 1</h2>
-                      <!-- dialog body -->
-                      <div class="modal-body">
-                        <img src="Content/logo.png">
-                      </div>
-                      <!-- dialog buttons -->
-                      <div class="modal-footer"></div>
-                    </div>
-                  </div>
-                </div>
+              </div>
                 
                 <div class="col-md-3">
-                  <div class="shirtModal modal-dialog">
+                  <div class="shirtModal modal-dialog hvr-grow">
                     <div class="modal-content">
                         <h2 class="modal-title">Shirt 2</h2>
                       <!-- dialog body -->
                       <div class="modal-body">
-                        <img src="Content/logo.png">
+                        <img src="Content/logo.png"/>
                       </div>
                       <!-- dialog buttons -->
                       <div class="modal-footer"></div>
                     </div>
                   </div>
-                  
-                  <div class="shirtModal modal-dialog">
+                </div>
+                
+                <div class="col-md-3">
+                  <div class="shirtModal modal-dialog hvr-grow">
+                    <div class="modal-content">
+                        <h2 class="modal-title">Shirt 3</h2>
+                      <!-- dialog body -->
+                      <div class="modal-body">
+                        <img src="Content/logo.png"/>
+                      </div>
+                      <!-- dialog buttons -->
+                      <div class="modal-footer"></div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-md-3">
+                  <div class="shirtModal modal-dialog hvr-grow">
+                    <div class="modal-content">
+                    <h2 class="modal-title">Shirt 4</h2>
+                      <!-- dialog body -->
+                      <div class="modal-body">
+                        <img src="Content/logo.png"/>
+                      </div>
+                      <!-- dialog buttons -->
+                      <div class="modal-footer"></div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="myModal">
+                          <div class="shirtModal modal-dialog hvr-grow">
+                            <div class="modal-content">
+                                <h2 class="modal-title">Shirt 1</h2>
+                              <!-- dialog body -->
+                              <div class="modal-body">
+                                <img src="Content/logo.png"/>
+                              </div>
+                              <!-- dialog buttons -->
+                              <div class="modal-footer"></div>
+                            </div>
+                          </div>
+                      </div>
+                </div>
+                
+                <div class="col-md-3">
+                  <div class="shirtModal modal-dialog hvr-grow">
                     <div class="modal-content">
                         <h2 class="modal-title">Shirt 2</h2>
                       <!-- dialog body -->
                       <div class="modal-body">
-                        <img src="Content/logo.png">
+                        <img src="Content/logo.png"/>
                       </div>
                       <!-- dialog buttons -->
                       <div class="modal-footer"></div>
@@ -99,24 +136,12 @@
                 </div>
                 
                 <div class="col-md-3">
-                  <div class="shirtModal modal-dialog">
+                  <div class="shirtModal modal-dialog hvr-grow">
                     <div class="modal-content">
                         <h2 class="modal-title">Shirt 3</h2>
                       <!-- dialog body -->
                       <div class="modal-body">
-                        <img src="Content/logo.png">
-                      </div>
-                      <!-- dialog buttons -->
-                      <div class="modal-footer"></div>
-                    </div>
-                  </div>
-                  
-                  <div class="shirtModal modal-dialog">
-                    <div class="modal-content">
-                        <h2 class="modal-title">Shirt 3</h2>
-                      <!-- dialog body -->
-                      <div class="modal-body">
-                        <img src="Content/logo.png">
+                        <img src="Content/logo.png"/>
                       </div>
                       <!-- dialog buttons -->
                       <div class="modal-footer"></div>
@@ -125,30 +150,17 @@
                 </div>
                 
                 <div class="col-md-3">
-                  <div class="shirtModal modal-dialog">
+                  <div class="shirtModal modal-dialog hvr-grow">
                     <div class="modal-content">
                     <h2 class="modal-title">Shirt 4</h2>
                       <!-- dialog body -->
                       <div class="modal-body">
-                        <img src="Content/logo.png">
+                        <img src="Content/logo.png"/>
                       </div>
                       <!-- dialog buttons -->
                       <div class="modal-footer"></div>
                     </div>
                   </div>
-                  
-                  <div class="shirtModal modal-dialog">
-                    <div class="modal-content">
-                    <h2 class="modal-title">Shirt 4</h2>
-                      <!-- dialog body -->
-                      <div class="modal-body">
-                        <img src="Content/logo.png">
-                      </div>
-                      <!-- dialog buttons -->
-                      <div class="modal-footer"></div>
-                    </div>
-                  </div>
-                  
                 </div>
             </div>
         </section>
@@ -172,7 +184,14 @@
         <script src="Scripts/LocalScroll/jquery.inview.js"></script>
         <script src="Scripts/LocalScroll/jquery.panelsnap.js"></script>
         <script>
-            $("body").panelSnap({directionThreshold: 50});
+            $(document).ready(function(){
+                $("body").panelSnap({directionThreshold: 50});
+                $(".shirtModal").mouseenter(function () {
+                    $(this).removeClass("replace").addClass("moveFront");
+                }).mouseleave(function () {
+                    $(this).removeClass("moveFront").addClass("replace");
+                });
+            });
         </script>
         
     </body>
