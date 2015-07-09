@@ -245,6 +245,31 @@
                     $this.css(margin[0], "inherit")
                     .css("position", "static");
                     margin = ["left"];
+                    
+                }).click(function (event) {
+                    var $this = $(this);
+                    var $row = $(".row");
+                    
+                    if(event.target.className === "info close"){
+                        $row.css("padding-top", "75px");
+                        
+                        $this.addClass("hvr-grow")
+                        .removeClass("expandedModal")
+                        .appendTo($oldParent);
+                        
+                        $(".info").hide();
+                    }
+                    else{
+                        $row.css("padding-top", "0px");
+                        
+                        $oldParent = $this.parent();
+                        
+                        $this.removeClass("hvr-grow")
+                        .addClass("expandedModal")
+                        .appendTo($("#shirtPage"));
+                        
+                        $(".info").show();
+                    }
                 });
             });
         </script>

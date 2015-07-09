@@ -12,16 +12,23 @@ h2{
     height: 20px;
     background-color: #2c2c2c;
 }
+.expandedModal{
+    margin: 0px !important;
+    z-index: 10000 !important;
+    right: inherit !important;
+    left: 0;
 }
+#shirtPage{
     position: absolute;
 }
+.info{
+    display: none;
 }
-
 #title{
     font-family: "Segoe Script", "AR DECODE", Vijaya, Arial;
 }
 #homepage, #series, #about{
-    height: 930px;
+    height: 975px;
     margin: 0;
 }
 #series{
