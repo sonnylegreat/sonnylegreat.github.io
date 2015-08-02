@@ -1,6 +1,5 @@
-﻿section{
-    padding-left: 20px;
-    padding-right: 20px;
+﻿body{
+    overflow-x: hidden;
 }
 img, .shirtModal, .separator{
     width: 100%;
@@ -11,31 +10,54 @@ h2{
 .separator{
     height: 20px;
     background-color: #2c2c2c;
+    width: 400%;
 }
 .expandedModal{
     margin: 0px !important;
     z-index: 10000 !important;
     right: inherit !important;
+    padding-top: 20px;
     left: 0;
-}
-#shirtPage{
-    position: absolute;
 }
 .info{
     display: none;
+}
+.selectors, .seriesTitle{
+    text-align: center;
+}
+#shirtPage1, #shirtPage2, #shirtPage3, #shirtPage4{
+    position: absolute;
+}
+#drugsPage{
+    padding-left: 30px;
 }
 #title{
     font-family: "Segoe Script", "AR DECODE", Vijaya, Arial;
 }
 #homepage, #series, #about{
-    height: 975px;
+    overflow-x: hidden;
     margin: 0;
 }
-#series{
-    background:url(../Content/SliderImages/mdmaShirt.jpg) 50% 0 no-repeat fixed;
+#homepage{
+    height: 780px;
+}
+#series, #about{
+    height: 1000px;
+}
+#seriesTitle{
+    padding-top: 20px;
+    margin-top: 0px;
 }
 #homepage{
     background: url(../Content/logo.png) 50% 0 no-repeat fixed;
+}
+
+#longPage{
+    width: 400%;
+    height: 1000px;
+    position: absolute;
+    background:url(../Content/SliderImages/mdmaShirt.jpg) 50% 0 repeat-x fixed;
+    overflow: hidden;
 }
 
 .story{
