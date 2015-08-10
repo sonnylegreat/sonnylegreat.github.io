@@ -22,9 +22,15 @@ h2{
 .info{
     display: none;
 }
-.selectors, .seriesTitle{
+.selectors{
     text-align: center;
+    z-index: 1000000000 !important;
 }
+
+#title, a, a > span{
+    color: black;
+}
+
 #shirtPage1, #shirtPage2, #shirtPage3, #shirtPage4{
     position: absolute;
 }

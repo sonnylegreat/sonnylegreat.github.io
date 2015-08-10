@@ -33,14 +33,19 @@
                         <a class="navbar-brand" id="title" href="index.html">Throw Down Attire</a>
                     </div>
                     <div class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav">
-                            <li><a href="index.html">Men</a></li>
-                            <li><a href="index.html">Women</a></li>
-                            <li><a href="index.html">Accessories</a></li>
-                        </ul>
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="index.html">Register</a></li>
-                            <li><a href="index.html">Log in</a></li>
+                            <li class="dropdown">
+                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Series <span class="caret"></span></a>
+                                 <ul class="dropdown-menu">
+                                     <li class="series" value="#drugs"><a href="#">Drugs</a></li>
+                                     <li class="series" value="#option-2"><a href="#">Option-2</a></li>
+                                     <li class="series" value="#lifestyle"><a href="#">Lifestyle</a></li>
+                                     <li class="series" value="#fpp"><a href="#">Fuck Plain Packaging</a></li>
+                                 </ul>
+                             </li>
+                            <li><a href="index.html">About</a></li>
+                            <li><a href="index.html">FAQ</a></li>
+                            <li><a href="index.html">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -54,7 +59,6 @@
                 <div class="row" id="longPage">
                     <div class="col-md-3" id="drugs" data-series="1">
                         <div id="shirtPage1"></div>
-                        <h2 class="seriesTitle">Drugs Series</h2>
                         <div class="selectors">
                             <button class="mdl-button mdl-js-button mdl-js-ripple-effect series drugs" value="#drugs" disabled>
                                 Drugs
@@ -66,7 +70,7 @@
                                 Lifestyle
                             </button>
                             <button class="mdl-button mdl-js-button mdl-js-ripple-effect series fpp" value="#fpp">
-                                FPP
+                                Fuck Plain Packaging
                             </button>
                         </div>
                         <div class="row">
@@ -141,22 +145,20 @@
                         
                         <div class="row">
                             <div class="col-md-3">
-                                <div class="myModal">
-                                      <div class="shirtModal modal-dialog hvr-grow" data-margin="left,60px">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="info close">×</button>
-                                                <h2 class="modal-title">Shirt 1</h2>
-                                            </div>
-                                          <!-- dialog body -->
-                                            <div class="modal-body">
-                                                <img src="Content/logo.png"/>
-                                            </div>
-                                          <!-- dialog buttons -->
-                                            <div class="modal-footer"></div>
-                                        </div>
-                                      </div>
-                                  </div>
+                              <div class="shirtModal modal-dialog hvr-grow" data-margin="left,60px">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="info close">×</button>
+                                        <h2 class="modal-title">Shirt 1</h2>
+                                    </div>
+                                  <!-- dialog body -->
+                                    <div class="modal-body">
+                                        <img src="Content/logo.png"/>
+                                    </div>
+                                  <!-- dialog buttons -->
+                                    <div class="modal-footer"></div>
+                                </div>
+                              </div>
                             </div>
                             
                             <div class="col-md-3">
@@ -214,7 +216,6 @@
                     
                     <div class="col-md-3" id="option-2" data-series="2">
                         <div id="shirtPage2"></div>
-                        <h2 class="seriesTitle">Option-2 Series</h2>
                         <div class="selectors">
                             <button class="mdl-button mdl-js-button mdl-js-ripple-effect series drugs" value="#drugs">
                                 Drugs
@@ -226,7 +227,7 @@
                                 Lifestyle
                             </button>
                             <button class="mdl-button mdl-js-button mdl-js-ripple-effect series fpp" value="#fpp">
-                                FPP
+                                Fuck Plain Packaging
                             </button>
                         </div>
                         <div class="row">
@@ -301,22 +302,20 @@
                         
                         <div class="row">
                             <div class="col-md-3">
-                                <div class="myModal">
-                                      <div class="shirtModal modal-dialog hvr-grow" data-margin="left,60px">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="info close">×</button>
-                                                <h2 class="modal-title">Shirt 1</h2>
-                                            </div>
-                                          <!-- dialog body -->
-                                            <div class="modal-body">
-                                                <img src="Content/logo.png"/>
-                                            </div>
-                                          <!-- dialog buttons -->
-                                            <div class="modal-footer"></div>
-                                        </div>
-                                      </div>
-                                  </div>
+                              <div class="shirtModal modal-dialog hvr-grow" data-margin="left,60px">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="info close">×</button>
+                                        <h2 class="modal-title">Shirt 1</h2>
+                                    </div>
+                                  <!-- dialog body -->
+                                    <div class="modal-body">
+                                        <img src="Content/logo.png"/>
+                                    </div>
+                                  <!-- dialog buttons -->
+                                    <div class="modal-footer"></div>
+                                </div>
+                              </div>
                             </div>
                             
                             <div class="col-md-3">
@@ -374,7 +373,6 @@
                     
                     <div class="col-md-3" id="lifestyle" data-series="3">
                         <div id="shirtPage3"></div>
-                        <h2 class="seriesTitle">Lifestyle Series</h2>
                         <div class="selectors">
                             <button class="mdl-button mdl-js-button mdl-js-ripple-effect series drugs" value="#drugs">
                                 Drugs
@@ -386,7 +384,7 @@
                                 Lifestyle
                             </button>
                             <button class="mdl-button mdl-js-button mdl-js-ripple-effect series fpp" value="#fpp">
-                                FPP
+                                Fuck Plain Packaging
                             </button>
                         </div>
                         <div class="row">
@@ -461,22 +459,20 @@
                         
                         <div class="row">
                             <div class="col-md-3">
-                                <div class="myModal">
-                                      <div class="shirtModal modal-dialog hvr-grow" data-margin="left,60px">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="info close">×</button>
-                                                <h2 class="modal-title">Shirt 1</h2>
-                                            </div>
-                                          <!-- dialog body -->
-                                            <div class="modal-body">
-                                                <img src="Content/logo.png"/>
-                                            </div>
-                                          <!-- dialog buttons -->
-                                            <div class="modal-footer"></div>
-                                        </div>
-                                      </div>
-                                  </div>
+                              <div class="shirtModal modal-dialog hvr-grow" data-margin="left,60px">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="info close">×</button>
+                                        <h2 class="modal-title">Shirt 1</h2>
+                                    </div>
+                                  <!-- dialog body -->
+                                    <div class="modal-body">
+                                        <img src="Content/logo.png"/>
+                                    </div>
+                                  <!-- dialog buttons -->
+                                    <div class="modal-footer"></div>
+                                </div>
+                              </div>
                             </div>
                             
                             <div class="col-md-3">
@@ -534,7 +530,6 @@
                     
                     <div class="col-md-3" id="fpp" data-series="4">
                         <div id="shirtPage4"></div>
-                        <h2 class="seriesTitle">Fuck Plain Packaging Series</h2>
                         <div class="selectors">
                             <button class="mdl-button mdl-js-button mdl-js-ripple-effect series drugs" value="#drugs">
                                 Drugs
@@ -546,7 +541,7 @@
                                 Lifestyle
                             </button>
                             <button class="mdl-button mdl-js-button mdl-js-ripple-effect series fpp" value="#fpp">
-                                FPP
+                                Fuck Plain Packaging
                             </button>
                         </div>
                         <div class="row">
@@ -621,22 +616,20 @@
                         
                         <div class="row">
                             <div class="col-md-3">
-                                <div class="myModal">
-                                      <div class="shirtModal modal-dialog hvr-grow" data-margin="left,60px">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="info close">×</button>
-                                                <h2 class="modal-title">Shirt 1</h2>
-                                            </div>
-                                          <!-- dialog body -->
-                                            <div class="modal-body">
-                                                <img src="Content/logo.png"/>
-                                            </div>
-                                          <!-- dialog buttons -->
-                                            <div class="modal-footer"></div>
-                                        </div>
-                                      </div>
-                                  </div>
+                              <div class="shirtModal modal-dialog hvr-grow" data-margin="left,60px">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="info close">×</button>
+                                        <h2 class="modal-title">Shirt 1</h2>
+                                    </div>
+                                  <!-- dialog body -->
+                                    <div class="modal-body">
+                                        <img src="Content/logo.png"/>
+                                    </div>
+                                  <!-- dialog buttons -->
+                                    <div class="modal-footer"></div>
+                                </div>
+                              </div>
                             </div>
                             
                             <div class="col-md-3">
@@ -712,6 +705,7 @@
         <script src="Scripts/LocalScroll/jquery.inview.js"></script>
         <script src="Scripts/BootstrapModal/bootstrap-modal.js"></script>
         <script src="Scripts/BootstrapModal/bootstrap-modalmanager.js"></script>
+        <script src="Scripts/inView/jquery.inview.js"></script>
         <script src="Scripts/Easing/jquery.easing.1.3.js"></script>
         <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
@@ -722,32 +716,57 @@
                 var $shirtModals = $(".shirtModal");
                 var $oldParent;
                 
+                function hideInfo($elem){
+                    $elem.addClass("hvr-grow")
+                        .removeClass("expandedModal")
+                        .appendTo($oldParent);
+                        
+                    $(".info").hide();
+                }
+                
+                function hoverChange($elem, position, inherit){
+                    if($elem.data("margin")){
+                        margin = $elem.data("margin").toString().split(',');
+                        $elem.css("margin-" + margin[0], inherit || margin[1]);
+                    }
+                    $elem.css("position", position)
+                    .css(margin[0], inherit || 0);
+                }
+                
+                function createShirtPage($elem){
+                    $oldParent = $elem.parent();
+                    var series = $oldParent.parent().parent().data("series");
+                        
+                    $elem.removeClass("hvr-grow")
+                    .addClass("expandedModal")
+                    .appendTo($("#shirtPage" + series));
+                        
+                    $(".info").show();
+                }
+                
+                function snapScroll($anchor){
+                    $("button.series").removeAttr("disabled");
+                    $("button" + $anchor.replace('#', '.')).attr("disabled", "true");
+                    
+                    $('html, body').stop().animate({
+			             scrollLeft: $($anchor).offset().left,
+                         scrollTop: $($anchor).offset().top
+	                 }, 1000);
+		             event.preventDefault();
+                }
+                
                 $shirtModals.mouseenter(function () {
                     var $this = $(this);
-                    if($this.data("margin")){
-                        margin = $this.data("margin").toString().split(',');
-                        $this.css("margin-" + margin[0], margin[1]);
-                    }
-                    $this.css("position", "absolute")
-                    .css(margin[0], 0);
+                    hoverChange($this, "absolute");
                     
                 }).mouseleave(function (event) {
                     var $this = $(this);
                     
                     if(event.target.classList.contains("expandedModal")){
-                        $this.addClass("hvr-grow")
-                        .removeClass("expandedModal")
-                        .appendTo($oldParent);
-                        
-                        $(".info").hide();
+                        hideInfo($this);
                     }
                     
-                    if($this.data("margin")){
-                        margin = $this.data("margin").toString().split(',');
-                        $this.css("margin-" + margin[0], "inherit");
-                    }
-                    $this.css(margin[0], "inherit")
-                    .css("position", "static");
+                    hoverChange($this, "static", "inherit");
                     margin = ["left"];
                     
                 }).click(function (event) {
@@ -755,34 +774,19 @@
                     
                     if(event.target.className === "info close"){
                         
-                        $this.addClass("hvr-grow")
-                        .removeClass("expandedModal")
-                        .appendTo($oldParent);
-                        
-                        $(".info").hide();
+                        hideInfo($this);
                     }
                     else if(!($this.hasClass("expandedModal"))){
-                        $oldParent = $this.parent();
-                        var series = $oldParent.parent().parent().data("series");
-                        
-                        $this.removeClass("hvr-grow")
-                        .addClass("expandedModal")
-                        .appendTo($("#shirtPage" + series));
-                        
-                        $(".info").show();
+                        createShirtPage($this);
                     }
                 });
                 $("button.series").click(function(event){
-                    var $this = $(this);
-                    var $anchor = $this.val();
-                    
-                    $("button.series").removeAttr("disabled");
-                    $("." + $this.attr("class").split(' ').join('.')).attr("disabled", "true");
-                    
-                    $('html, body').stop().animate({
-			             scrollLeft: $($anchor).offset().left
-	                 }, 1000);
-		             event.preventDefault();
+                    var $anchor = $(this).val();
+                    snapScroll($anchor);
+                });
+                $("li.series").click(function(event){
+                    var $anchor = $(this).attr("value");
+                    snapScroll($anchor);
                 });
             });
         </script>
