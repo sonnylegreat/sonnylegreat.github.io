@@ -33,16 +33,13 @@
                         <a class="navbar-brand" id="title" href="index.html">Throw Down Attire</a>
                     </div>
                     <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="series" value="#drugs"><a href="#">Drugs</a></li>
+                             <li class="series" value="#option-2"><a href="#">Option-2</a></li>
+                             <li class="series" value="#lifestyle"><a href="#">Lifestyle</a></li>
+                             <li class="series" value="#fpp"><a href="#">Fuck Plain Packaging</a></li>
+                        </ul>
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="dropdown">
-                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Series <span class="caret"></span></a>
-                                 <ul class="dropdown-menu">
-                                     <li class="series" value="#drugs"><a href="#">Drugs</a></li>
-                                     <li class="series" value="#option-2"><a href="#">Option-2</a></li>
-                                     <li class="series" value="#lifestyle"><a href="#">Lifestyle</a></li>
-                                     <li class="series" value="#fpp"><a href="#">Fuck Plain Packaging</a></li>
-                                 </ul>
-                             </li>
                             <li><a href="index.html">About</a></li>
                             <li><a href="index.html">FAQ</a></li>
                             <li><a href="index.html">Contact</a></li>
@@ -59,20 +56,6 @@
                 <div class="row" id="longPage">
                     <div class="col-md-3" id="drugs" data-series="1">
                         <div id="shirtPage1"></div>
-                        <div class="selectors">
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect series drugs" value="#drugs" disabled>
-                                Drugs
-                            </button>
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect series option-2" value="#option-2">
-                                Option-2
-                            </button>
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect series lifestyle" value="#lifestyle">
-                                Lifestyle
-                            </button>
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect series fpp" value="#fpp">
-                                Fuck Plain Packaging
-                            </button>
-                        </div>
                         <div class="row">
                             <div class="col-md-3">
                               <div class="shirtModal modal-dialog hvr-grow" data-margin="left,60px">
@@ -216,20 +199,6 @@
                     
                     <div class="col-md-3" id="option-2" data-series="2">
                         <div id="shirtPage2"></div>
-                        <div class="selectors">
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect series drugs" value="#drugs">
-                                Drugs
-                            </button>
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect series option-2" value="#option-2" disabled>
-                                Option-2
-                            </button>
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect series lifestyle" value="#lifestyle">
-                                Lifestyle
-                            </button>
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect series fpp" value="#fpp">
-                                Fuck Plain Packaging
-                            </button>
-                        </div>
                         <div class="row">
                             <div class="col-md-3">
                               <div class="shirtModal modal-dialog hvr-grow" data-margin="left,60px">
@@ -373,20 +342,6 @@
                     
                     <div class="col-md-3" id="lifestyle" data-series="3">
                         <div id="shirtPage3"></div>
-                        <div class="selectors">
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect series drugs" value="#drugs">
-                                Drugs
-                            </button>
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect series option-2" value="#option-2">
-                                Option-2
-                            </button>
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect series lifestyle" value="#lifestyle" disabled>
-                                Lifestyle
-                            </button>
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect series fpp" value="#fpp">
-                                Fuck Plain Packaging
-                            </button>
-                        </div>
                         <div class="row">
                             <div class="col-md-3">
                               <div class="shirtModal modal-dialog hvr-grow" data-margin="left,60px">
@@ -530,20 +485,6 @@
                     
                     <div class="col-md-3" id="fpp" data-series="4">
                         <div id="shirtPage4"></div>
-                        <div class="selectors">
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect series drugs" value="#drugs">
-                                Drugs
-                            </button>
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect series option-2" value="#option-2" disabled>
-                                Option-2
-                            </button>
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect series lifestyle" value="#lifestyle">
-                                Lifestyle
-                            </button>
-                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect series fpp" value="#fpp">
-                                Fuck Plain Packaging
-                            </button>
-                        </div>
                         <div class="row">
                             <div class="col-md-3">
                               <div class="shirtModal modal-dialog hvr-grow" data-margin="left,60px">
@@ -787,6 +728,9 @@
                 $("li.series").click(function(event){
                     var $anchor = $(this).attr("value");
                     snapScroll($anchor);
+                });
+                $("a, li").mouseup(function(){
+                    $(this).blur();
                 });
             });
         </script>
